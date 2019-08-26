@@ -28,14 +28,14 @@ class Scraper
   end
   
   def make_courses 
-    p get_courses[0].children[3].text
-    p get_courses[0].children[5].text
-    p get_courses[0].children[7].text
+    p 
+    p
+    p 
       get_courses.each do |el| 
         new_course = Course.new 
-        new_course.title = 
-        new_course.schedule = 
-        new_course.description = 
+        new_course.title = el.children[3].text
+        new_course.schedule = el.children[5].text
+        new_course.description = el.children[7].text
       
       end
   end
