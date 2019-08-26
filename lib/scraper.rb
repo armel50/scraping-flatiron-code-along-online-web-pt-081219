@@ -30,7 +30,8 @@ class Scraper
   
   def make_courses 
      p get_courses.first.css("h2").text
-     p get_courses.first.css("")
+     p get_courses.first.css("em").text 
+     p get_courses.first.css("p").text
      
       get_courses.each do |el| 
        
