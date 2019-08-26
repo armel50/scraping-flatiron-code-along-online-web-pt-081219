@@ -21,7 +21,7 @@ class Scraper
     @html = open("http://learn-co-curriculum.github.io/site-for-scraping/courses") 
     
     @doc = Nokogiri::HTML(@html)
-    p @doc
+  
   end
   
   def get_courses 
@@ -29,7 +29,7 @@ class Scraper
   end
   
   def make_courses 
-      get_courses.first.css("h")
+      get_courses.first.css("h2").text
       get_courses.each do |el| 
        
         new_course = Course.new 
