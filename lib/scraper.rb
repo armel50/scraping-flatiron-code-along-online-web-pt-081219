@@ -21,6 +21,7 @@ class Scraper
     @html = open("http://learn-co-curriculum.github.io/site-for-scraping/courses") 
     
     @doc = Nokogiri::HTML(@html)
+    p @doc
   end
   
   def get_courses 
