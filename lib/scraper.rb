@@ -32,10 +32,10 @@ class Scraper
     p get_courses[0].children[5].text
     p get_courses[0].children[7].text
       get_courses.each do |el| 
-      new_course = Course.new 
-      new_course.title = 
-      new_course.schedule = 
-      new_course.description = 
+        new_course = Course.new 
+        new_course.title = 
+        new_course.schedule = 
+        new_course.description = 
       
       end
   end
