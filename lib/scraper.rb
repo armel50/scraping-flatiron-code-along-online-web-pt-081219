@@ -26,6 +26,10 @@ class Scraper
   def get_courses 
     get_page.css(".post")
   end
+  
+  def make_courses 
+    get_courses.each{}
+  end
 end
 
 
