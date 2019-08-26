@@ -36,6 +36,9 @@ class Scraper
       get_courses.each do |el| 
        
         new_course = Course.new 
+        new_course.title = el.css("h2").text 
+        new_course.schedule = el.css("em").text 
+        new_course.description = el.css("p").text
         
        
       
