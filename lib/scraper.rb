@@ -29,7 +29,7 @@ class Scraper
   end
   
   def make_courses 
-      get_courses.first.css("h2").text
+     p get_courses.first.css("h2").text
       get_courses.each do |el| 
        
         new_course = Course.new 
